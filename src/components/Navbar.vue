@@ -1,61 +1,59 @@
 <template>
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-            </a>
-
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item">
-                    Home
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <div><b>&nbsp;Boopa-dee Bappa-dee</b></div>
                 </a>
 
-                <a class="navbar-item">
-                    Documentation
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
-                    </div>
-                </div>
             </div>
 
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary">
-                            <strong>Sign up</strong>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/">
+                        Translator
+                    </a>
+
+                    <a class="navbar-item" href="about">
+                        About
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            View on Github
                         </a>
-                        <a class="button is-light">
-                            Log in
-                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="https://github.com/MrMonk3y/Boopa-Dee-Bappa-Dee" target="_blank">
+                                C Interpreter
+                            </a>
+                            <a class="navbar-item" href="https://github.com/b2a3e8/boopa-dee-bappa-dee.js" target="_blank">
+                                JS Interpreter
+                            </a>
+                            <a class="navbar-item" href="https://github.com/b2a3e8/boopa-dee-bappa-dee.html" target="_blank">
+                                This website
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!--<div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>-->
             </div>
         </div>
     </nav>
