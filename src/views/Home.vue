@@ -5,8 +5,8 @@
 
     <div class="tabs">
       <ul>
-        <li class="is-active"><a>ASCII to Boopa-dee Bappa-dee</a></li>
-        <li><a>Boopa-dee Bappa-dee to ASCII</a></li>
+        <li class="is-active"><a>ASCII to Boopa-dee</a></li>
+        <li><a>Boopa-dee to ASCII</a></li>
       </ul>
     </div>
 
