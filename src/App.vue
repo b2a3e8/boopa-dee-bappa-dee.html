@@ -20,5 +20,18 @@
   }
 </script>
 
-<style>
+<!--<style>
+</style>-->
+
+<style lang="scss">
+  // Import Bulma's core
+  @import "~bulma/sass/utilities/_all";
+
+  // Set your colors
+  $primary: #000080;
+  $background: #000080;
+
+  // Import Bulma and Buefy styles
+  @import "~bulma";
+  @import "~buefy/src/scss/buefy";
 </style>
