@@ -26,6 +26,9 @@
 <style lang="scss">
   // Set your colors
   $primary: #000045;
+  $info: #DCDCDC;
+  $warning: #FFCC11;
+  $link: #EE9A00;
 
   // Import Bulma's core
   @import "~bulma/sass/utilities/_all";
