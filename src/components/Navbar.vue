@@ -1,9 +1,9 @@
 <template>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="/">
-                    <div><b>&nbsp;Boopa-dee Bappa-dee</b></div>
+                    <div><i class="fas fa-language fa-2x" style="color:white;"></i></div>
                 </a>
 
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -24,7 +24,7 @@
                     </a>
 
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
+                        <a class="navbar-link is-arrowless">
                             View on Github
                         </a>
 
