@@ -5,15 +5,15 @@
                 <a class="navbar-item" href="/">
                     <div><i class="fas fa-language fa-2x" style="color:white;"></i></div>
                 </a>
-
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
 
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div id="navbarBasicExample" class="navbar-menu" :class="{ 'is-active' : showNav }">
+
                 <div class="navbar-start">
                     <a class="navbar-item" href="/">
                         Translator
@@ -62,5 +62,10 @@
 <script>
     export default {
         name: 'Navbar',
+        data() {
+            return {
+                showNav: false
+            };
+        }
     }
 </script>
