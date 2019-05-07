@@ -1,9 +1,10 @@
 <template>
   <div class="about">
     <h1 class="title">Boopa-Dee Bappa-Dee</h1>
-    <p>Boopa-Dee Bappa-Dee is a programming language based on the vocabulary of <a target="_blank" href="https://www.youtube.com/watch?v=aS38wY1Fm34&feature=youtu.be">Peter Griffin's interpretation of the italian language</a>.</p>
+    <p>Boopa-Dee Bappa-Dee is a programming language based on the vocabulary of <a target="_blank" href="https://www.youtube.com/watch?v=aS38wY1Fm34&feature=youtu.be">Peter Griffin's interpretation of the italian language</a>. It was invented .... TODO</p>
     <p>One could write entire programms in Boopa-Dee Bappa-Dee, however it's not very readable and effective.</p>
-    <p>Actually Boopa-Dee Bappa-Dee is a brainfuck derivative.</p>
+    <p>Actually Boopa-Dee Bappa-Dee is a brainfuck derivative. TODO...</p>
+    <p>This Website...encode/decode.. TODO</p>
 
     <br />
     <table class="table">
