@@ -10,7 +10,7 @@
 
     <div class="columns is-desktop is-vcentered">
       <div class="column">
-        <textarea v-model="input" @input="submit()" class="textarea has-fixed-size is-shadowless is-info" placeholder="Type or paste text" rows="11"></textarea>
+        <textarea v-model="input" @input="translate()" class="textarea has-fixed-size is-shadowless is-info" placeholder="Type or paste text" rows="11"></textarea>
       </div>
       <div class="column is-narrow is-hidden-touch">
         <i class="fas fa-chevron-right" style="color: #BABABA;"></i>
@@ -24,7 +24,9 @@
 </template>
 
 <script>
-var _ = require('lodash');
+import _ from 'lodash';
+import boopadee from 'boopa-dee-bappa-dee.js';
+
 export default {
   name: 'home',
   components: {
@@ -34,21 +36,12 @@ export default {
       autoDetectMode: true,
       mode: 'ascii-to-boopa',
       input: '',
+      output: '',
     };
   },
-  computed: {
-    output() {
-      var result = '';
-      if (this.mode === 'ascii-to-boopa') {
-        result = this.input.replace(/./g, "x");
-      } else {
-        result = this.input.replace(/./g, "y");
-      }
-      return result;
-    },
-  },
   methods: {
-    submit: _.debounce(function (e) {
+    translate: async function () {
+      // detect mode
       if (this.autoDetectMode) {
         if (this.input.match(/^(bappadee|boo|boopa|bappa|dee|boopadee|baa| )+/)) {
           this.mode = 'boopa-to-ascii';
@@ -56,7 +49,18 @@ export default {
           this.mode = 'ascii-to-boopa';
         }
       }
-    }, 500),
+
+      // translate
+      if (this.mode === 'ascii-to-boopa') {
+        this.output = await boopadee.encode(this.input);
+      } else {
+        try {
+          this.output = await boopadee.decode(this.input);
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    },
   }
 }
 </script>
