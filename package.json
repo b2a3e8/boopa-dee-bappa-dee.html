@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "npm run build; push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "npm run build; echo 'boopadee.com' > dist/CNAME; push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "boopa-dee-bappa-dee.js": "0.0.2",
