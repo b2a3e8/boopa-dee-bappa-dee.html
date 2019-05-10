@@ -63,8 +63,34 @@ export default {
       }
     },
     copyOutputToClipboard: function () {
-      document.getElementById("textareaOutput").select();
+      var input = document.getElementById('textareaOutput');
+      var isiOSDevice = navigator.userAgent.match(/ipad|iphone/i);
+
+      if (isiOSDevice) {
+
+        var editable = input.contentEditable;
+        var readOnly = input.readOnly;
+
+        input.contentEditable = true;
+        input.readOnly = false;
+
+        var range = document.createRange();
+        range.selectNodeContents(input);
+
+        var selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+
+        input.setSelectionRange(0, 999999);
+        input.contentEditable = editable;
+        input.readOnly = readOnly;
+
+      } else {
+        input.select();
+      }
+
       document.execCommand('copy');
+
       if (window.getSelection) {window.getSelection().removeAllRanges();}
       else if (document.selection) {document.selection.empty();}
     }
