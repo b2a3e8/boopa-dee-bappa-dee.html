@@ -3,8 +3,8 @@
 
     <div class="tabs">
       <ul>
-        <li :class="{ 'is-active': (mode === 'ascii-to-boopa') }"><a @click="mode = 'ascii-to-boopa'; autoDetectMode = false;">ASCII to Boopa-dee</a></li> <!-- TODO trigger translating on click -->
-        <li :class="{ 'is-active': (mode === 'boopa-to-ascii') }"><a @click="mode = 'boopa-to-ascii'; autoDetectMode = false;">Boopa-dee to ASCII</a></li> <!-- TODO trigger translating on click -->
+        <li :class="{ 'is-active': (mode === 'ascii-to-boopa') }"><a @click="mode = 'ascii-to-boopa'; autoDetectMode = false; translate();">ASCII to Boopa-dee</a></li>
+        <li :class="{ 'is-active': (mode === 'boopa-to-ascii') }"><a @click="mode = 'boopa-to-ascii'; autoDetectMode = false; translate();">Boopa-dee to ASCII</a></li>
       </ul>
     </div>
 
@@ -16,9 +16,10 @@
         <i class="fas fa-chevron-right" style="color: #BABABA;"></i>
       </div>
       <div class="column">
-        <textarea v-model="output" class="textarea has-fixed-size is-shadowless is-info" readonly rows="11"></textarea>
+        <textarea id="textareaOutput" v-model="output" class="textarea has-fixed-size is-shadowless is-info" readonly rows="11"></textarea>
       </div>
     </div>
+    <a @click="copyOutputToClipboard()" class="button is-outlined is-info is-pulled-right">Copy to Clipboard</a>
 
   </div>
 </template>
@@ -61,6 +62,19 @@ export default {
         }
       }
     },
+    copyOutputToClipboard: function () {
+      document.getElementById("textareaOutput").select();
+      document.execCommand('copy');
+      if (window.getSelection) {window.getSelection().removeAllRanges();}
+      else if (document.selection) {document.selection.empty();}
+    }
   }
 }
 </script>
+<style>
+  .button.is-info.is-outlined:hover, .button.is-info.is-outlined:focus {
+    background-color: white;
+    border-color: #EE9A00;
+    color: #EE9A00;
+  }
+</style>

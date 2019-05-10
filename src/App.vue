@@ -27,7 +27,7 @@
   // Set your colors
   $primary: #000045;
   $info: #DCDCDC;
-  $warning: #FFCC11;
+  $warning: #EE9A00;
   $link: #EE9A00;
 
   // Import Bulma's core
