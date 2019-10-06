@@ -7,7 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "boopa-dee-bappa-dee.js": "0.0.2",
+    "boopa-dee-bappa-dee.js": "0.0.3",
     "buefy": "^0.7.7",
     "core-js": "^2.6.9",
     "lodash": "^4.17.11",
