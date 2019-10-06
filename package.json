@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build; echo 'boopadee.com' > dist/CNAME"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "boopa-dee-bappa-dee.js": "0.0.2",
