@@ -4,7 +4,7 @@
     <p>Boopa-Dee Bappa-Dee is a programming language based on the vocabulary of <a target="_blank" href="https://www.youtube.com/watch?v=aS38wY1Fm34&feature=youtu.be">Peter Griffin's interpretation of the italian language</a>.</p>
     <p>One could write entire programms in Boopa-Dee Bappa-Dee, however it's not very readable and effective.</p>
     <p>Actually Boopa-Dee Bappa-Dee is a brainfuck derivative, but uses words instead of characters as commands.</p>
-    <p>This Website makes it very simple to encode ASCII strings into Boopa-Dee Bappa-Dee and decode it back again.</p>
+    <p>This Website makes it very simple to encode ASCII into Boopa-Dee Bappa-Dee and decode it back again.</p>
     <p>If you want to use Boopa-Dee Bappa-Dee as a programming language, please make use of <a target="_blank" href="https://github.com/MrMonk3y/Boopa-Dee-Bappa-Dee">Sascha's Interpreter written in C</a>.</p>
     <p style="margin-bottom: 15px;">You can find a list of commands and their meanings below:</p>
     <table class="table">
