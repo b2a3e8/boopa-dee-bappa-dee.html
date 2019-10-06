@@ -18,3 +18,4 @@ jobs:
         BRANCH: gh-pages
         FOLDER: dist
         BUILD_SCRIPT: npm install && npm run-script build
+        CNAME: boopadee.com
