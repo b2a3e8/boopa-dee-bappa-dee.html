@@ -11,10 +11,6 @@ jobs:
       uses: actions/checkout@master
       with:
         ref: develop
-    - run: npm install
-    - run: npm run-script build
-    - run: ls -la
-    - run: ls dist
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
