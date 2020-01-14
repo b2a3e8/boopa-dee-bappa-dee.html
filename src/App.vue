@@ -10,7 +10,6 @@
 </template>
 
 <script>
-  // @ is an alias to /src
   import Navbar from '@/components/Navbar.vue'
 
   export default {
@@ -20,11 +19,8 @@
   }
 </script>
 
-<!--<style>
-</style>-->
-
 <style lang="scss">
-  // Set your colors
+  // Set colors
   $primary: #000045;
   $info: #DCDCDC;
   $warning: #EE9A00;
